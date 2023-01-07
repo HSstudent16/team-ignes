@@ -1,0 +1,118 @@
+::-webkit-scrollbar {
+  width: 20px;
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  background-clip: content-box;
+  border-radius: 20px;
+  border: #0000 solid 6px;
+  box-shadow: 0 0 0 2px inset var(--primary);
+  background-color: var(--secondary);
+}
+body {
+  margin: 0;
+  overflow: overlay;
+  cursor: default;
+  line-height: 1.25em;
+  font-family: 'Arial', 'Noto Sans', 'sans-serif';
+}
+h1, h2, h3, h4, h5, p, pre {
+  margin: 0.25em 0;
+  user-select: none;
+}
+h1, h2, h3 {
+  font-family: 'Arial Black', 'Inter Black', 'sans-serif';
+  line-height: 1.1em;
+}
+label {
+  cursor: pointer;
+  user-select: none;
+}
+fieldset {
+  display: grid;
+  gap: .5em;
+  user-select: none;
+  grid-template-columns: auto auto auto;
+}
+input {
+  font-size: 100%;
+  padding: .25em;
+  margin: .25em;
+  border: none;
+  border-bottom: var(--secondary) solid 0.1em;
+  outline: none;
+  color: var(--tertiary);
+  cursor: text;
+}
+input[type=checkbox], input[type=radio] {
+  position: relative;
+  cursor: pointer;
+  margin: 0 1em;
+  width: 0;
+  height: 0;
+}
+input[type=checkbox]::before, input[type=radio]::before {
+  position: absolute;
+  content: " ";
+  top: -.4em;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: var(--primary);
+  border: var(--tertiary) solid 0.2em;
+  transition: border-width ease .2s;
+  box-sizing: border-box;
+}
+input[type=checkbox]:checked::before,
+input[type=radio]:checked::before {
+  border-width: .5em;
+}
+input[type=button], input[type=submit],
+input[type=reset], button, .button {
+  border: var(--secondary) solid 0.1em;
+  cursor: pointer;
+  background: var(--primary);
+  display: block;
+
+}
+footer {
+  position: relative;
+  padding: 2em;
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--secondary);
+  color: var(--primary);
+  padding-left: var(--navbar-width);
+}
+footer .link, footer a {
+  color: var(--accent);
+}
+
+table {
+  border-spacing: 0;
+}
+td, th {
+  padding: 0.25em;
+}
+a:not(.thumb), .link {
+  color: var(--tertiary);
+  cursor: pointer;
+  text-decoration: none;
+  padding-bottom: 0.1em;
+  display: inline;
+  background-image: linear-gradient(0, var(--tertiary), var(--tertiary));
+  background-size: 0% 0.1em;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  transition: background-size ease .2s;
+}
+.right a, a.right,
+.right .link, .link.right {
+  background-position: 100% 100%;
+}
+a:hover, .link:hover {
+  background-size: 100% 0.1em;
+}

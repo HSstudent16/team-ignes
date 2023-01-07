@@ -1,0 +1,251 @@
+/* Table stripes */
+table.zebra tbody tr:nth-child(1),
+table.zebra tbody tr:nth-child(3),
+table.zebra tbody tr:nth-child(5),
+table.zebra tbody tr:nth-child(7),
+table.zebra tbody tr:nth-child(9),
+table.zebra tbody tr:nth-child(11),
+table.zebra tbody tr:nth-child(13){
+  background-color: #0001;
+}
+.stylized td {
+  text-align: center;
+  border-right: solid 1px;
+  border-top: solid 1px;
+}
+.stylized th {
+  text-align: left;
+  border-right: solid 1px;
+}
+
+/* Colors */
+.light {
+  color: #ffe;
+}
+.bg-fixed {
+  background-attachment: fixed;
+}
+.bg-baseline {
+  background-position: center bottom;
+}
+.bg-right {
+  background-position: right center;
+}
+.bg-dark {
+  background: #0005;
+  padding: 0 0.5em;
+  border-radius: 2em;
+}
+
+/* Sizes */
+.nano {
+  width: 2em;
+  height: 2em;
+}
+.micro {
+  width: 100px;
+}
+.small {
+  width: 150px;
+}
+.small-text {
+  font-size: 85%;
+}
+.med {
+  width: 200px;
+}
+.large {
+  width: 300px;
+}
+.fill {
+  width: 100%;
+  box-sizing: border-box;
+}
+.max-width {
+  width: max-content;
+}
+.full {
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Positioning */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.inline {
+  margin: 0.25em;
+  display: inline;
+}
+.auto-margin {
+  margin: auto;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.flex.middle {
+  align-items: center;
+}
+.grid {
+  display: grid;
+}
+.col-2 {
+  grid-template-columns: auto auto;
+}
+.askew-a {
+  transform: rotate(-2deg);
+}
+.askew-b {
+  transform: rotate(1deg);
+}
+.right {
+  text-align: right;
+}
+.center-text {
+  text-align:center;
+}
+
+/* Spacing */
+.padded {
+  padding: 1.5em;
+}
+.lightspaced {
+  margin: 0.5em;
+}
+.spaced {
+  margin: 1em;
+}
+.space-content > *{
+  margin: 1em;
+}
+
+/* Content elements */
+.page-content {
+  padding: 1.5em;
+  padding-left: var(--navbar-width);
+}
+.code-embed {
+  padding: 0.75em;
+  border: solid var(--secondary) 0.1em;
+  border-radius: 0.75em;
+  cursor: text;
+  user-select: auto;
+}
+.avatar {
+  background-clip: content-box;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+.widget {
+  margin: 2em;
+  padding: 0.5em;
+  border-radius: 1em;
+  box-shadow: black 0 0.2em 0.5em -0.2em;
+  background: white;
+}
+.border {
+  background: var(--tertiary);
+  width: 100%;
+  height: 0.5em;
+  position: relative;
+}
+.shadow-top, .rel {
+  position: relative;
+}
+.shadow-top::before{
+  position: absolute;
+  top: -.5em;
+  left: 0;
+  width: 100%;
+  height: .5em;
+  background-image: linear-gradient(0, #0004, transparent);
+  content: " ";
+}
+.sharp {
+  background-color: var(--tertiary) !important;
+  color: var(--primary);
+  transition: background-color ease .2s, color ease .2s, ease .2s;
+}
+.sharp:hover {
+  background-color: var(--primary) !important;
+  color: var(--tertiary);
+}
+.panel {
+  margin: 1em;
+}
+.tag {
+  background-color: var(--accent);
+  color: var(--primary);
+  font-size: 75%;
+  padding: 0 0.5em;
+  margin: 0.1em;
+  border-radius: 1.5em;
+  font-weight: bold;
+  border: solid var(--accent) 0.1em;
+  display: inline-block;
+}
+.skill.tag {
+  background-color: transparent;
+  color: var(--secondary);
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Thumbnail */
+.thumb {
+  border: solid var(--secondary) 0.1em;
+  background: none;
+  overflow: hidden;
+  border-radius: 0.5em;
+  position: relative;
+  display: block;
+  font-size: 75%;
+  aspect-ratio: 1 / 1;
+}
+.hoverfade {
+  background: var(--primary);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: .5em;
+  color: var(--secondary);
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease .2s;
+}
+.thumb:hover .hoverfade {
+  opacity: 0.9;
+  visibility: visible;
+}
+.hide-toggle {
+  display: none;
+}
+.hide-toggle + .hideable > .hideable-arrow::before {
+  content: " ";
+  display: inline-block;
+  margin: 0 .5em 0 0;
+  box-sizing: border-box;
+  border: solid var(--tertiary) .5em;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(315deg) scale(0.8);
+  transition: transform ease .4s;
+}
+.hide-toggle:checked + .hideable > .hideable-arrow::before {
+  transform: rotate(45deg) scale(0.8);
+}
+.hide-toggle + .hideable > .hideable-content {
+  overflow: hidden;
+  transition: height ease .4s;
+}

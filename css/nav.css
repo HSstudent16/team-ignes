@@ -1,0 +1,103 @@
+/* Navigation inputs */
+.nav, .nav + .page {
+  display: none;
+}
+.nav + .page {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--primary);
+  color: var(--secondary);
+
+}
+.nav:checked + .page {
+  display: block;
+}
+
+/* Navigation menu */
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: var(--navbar-width);
+  height: 100vh;
+  z-index: 3;
+  background-color: transparent;
+  transform: scale(1, 1) translate(0, 0);
+  transition: transform ease .2s;
+
+}
+nav:hover, nav:focus-within {
+  transform: scale(2, 2) translate(25%, 0);
+}
+#coveralls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0007;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all ease .2s;
+}
+nav:hover + #coveralls {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 3D navigation boxes */
+.d3-box {
+  position: relative;
+  cursor: pointer;
+  perspective: 400px;
+  perspective-origin: center right;
+  font-size: var(--navbar-width);
+  width: var(--navbar-width);
+  height: var(--navbar-width);
+  line-height: 1.1;
+}
+.d3-box .side {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 20%;
+  rotate: y -90deg;
+  transform-origin: 50% 50% var(--navbar-center);
+  box-sizing: border-box;
+  background: #111;
+  color: #111;
+  transition: all ease .4s;
+  transition-property: rotate, background-color, color;
+  overflow: hidden;
+}
+.d3-box:hover .side {
+  rotate: y 0deg;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+.d3-box .front {
+  background: var(--accent);
+  color: var(--secondary);
+  font-size: 70%;
+  padding: 15%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease .4s;
+  transition-property: rotate, background-color, color;
+  transform-origin: 50% 50% var(--navbar-center);
+}
+.d3-box:hover .front{
+  rotate: y 90deg;
+  background-color: #333;
+  color: #333;
+}

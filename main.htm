@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<!--
+  >>> TEAM MEMBERS <<<
+
+  If you wish to leave a blurb for your profile page, then
+  please comment it in the thread I made in the T&T.
+
+  Also, the "contacts" list in the footer is just filler
+  right now.  If you wish to be a spokesperson for our team,
+  then let me know :)
+
+  >>> CREDITS <<<
+
+  3D cube navbar inspired by        codepen.io/arjancodes/pen/VwpVqL
+  Markdown parser adapted from      github.com/g105b/markdown-to-html
+  Animated underline inspired by    floridaypoly.edu
+  All code written & maintained by  HSstudent16
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Team Ignes Homepage</title>
+    <style>
+      :root {
+        --primary: #ffe;
+        --secondary: rgb(71, 71, 71);
+        --tertiary: rgb(184, 0, 0);
+        --accent: rgb(255, 165, 56);
+        --navbar-width: 6vw;
+        --navbar-center: -3vw;
+      }
+    </style>
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel = "stylesheet" href = "defaults.css" />
+    <link rel = "stylesheet" href = "nav.css" />
+    <link rel = "stylesheet" href = "content.css" />
+  </head>
+  <body>
+
+    <x-sources hidden>
+      <x-link data-name = "iggy">https://www.khanacademy.org/computer-programming/i/5179421639622656/latest.png</x-link>
+      <x-link data-name = "fire">https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Fire_looped_3.gif/640px-Fire_looped_3.gif</x-link>
+      <x-link data-name = "firework">https://upload.wikimedia.org/wikipedia/commons/c/c9/Bg.gif</x-link>
+      <x-link data-name = "iggy-jr">https://www.khanacademy.org/computer-programming/i/5655948881870848/latest.png</x-link>
+      <x-link data-name = "horizons-page">https://www.khanacademy.org/cs/rickroll/5134544642031616</x-link>
+      <x-link data-name = "mother-contest">https://www.khanacademy.org/cs/another-rickroll/5317909013905408</x-link>
+      <x-link data-name = "smv">https://www.khanacademy.org/cs/smvs-rickroll/5153518035451904</x-link>
+      <x-link data-name = "cardstock">https://www.khanacademy.org/cs/cardstock-rickroll/5880949017985024</x-link>
+      <x-link data-name = "lava-lake">https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Lava_Lake_Nyiragongo_2.jpg/640px-Lava_Lake_Nyiragongo_2.jpg</x-link>
+      <x-link data-name = "lava-2">https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Meradalir_2022-08-04.jpg/640px-Meradalir_2022-08-04.jpg</x-link>
+      <x-link data-name = "code">https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/DARPA_Big_Data.jpg/640px-DARPA_Big_Data.jpg</x-link>
+      <x-link data-name = "news">https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/food/croissant.png</x-link>
+    </x-sources>
+
+    <input type = "nav" id = "home"  />
+    <div class = "page">
+      <header class = "full light bg-baseline bg-fixed" data-bg-src = "fire">
+        <div class = "centered flex middle bg-dark">
+          <div class = "panel">
+            <img class = "small avatar left" alt = "Our mascot, Iggy" data-src = "iggy" />
+          </div>
+          <div class = "panel med">
+            <h1>Team Ignes</h1>
+            <p>We&rsquo;ve got style!</p>
+          </div>
+        </div>
+      </header>
+      <div class = "border shadow-top"></div>
+      <div class = "page-content">
+        <div class = "widget flex middle askew-b">
+          <div class = "panel small right">
+            <h2>What&rsquo;s going on?</h2>
+            <label for = "news" class = "link">All news</label>
+          </div>
+          <div class = "panel med">
+            <p>The Homepage Challenge has been released, and competitors are scrambling to meet deadlines!</p>
+          </div>
+        </div>
+        <div class = "widget flex middle askew-a">
+          <div class = "panel small right">
+            <h2 class = "max-width">Who are we?</h2>
+            <label for = "members" class = "link">View the team</label>
+          </div>
+          <div class = "panel med">
+            <p>We are a team of coders dedicated to bringing sophistication to the hotlist, and more importantly to the Winter Coding cup...</p>
+          </div>
+        </div>
+        <div class = "widget flex middle askew-b">
+          <div class = "panel small right">
+            <h2>Where are we?</h2>
+            <label for = "standings" class = "link">View rankings</label>
+          </div>
+          <div class = "panel med">
+            <p>There are six teams in the Winter Coding Cup: Ignes, Hydrus, Caela, Tellus, Pruina, and Umbra...</p>
+          </div>
+        </div>
+        <div class = "widget flex middle askew-a">
+          <div class = "panel small right">
+            <h2>Why are we here?</h2>
+            <label for = "about" class = "link">Read more</label>
+          </div>
+          <div class = "panel med">
+            <p>Team Ignes is one of six teams battling it out in the Winter Coding Cup.  Our mission is to win, by beating the other teams...</p>
+          </div>
+        </div>
+        <div class = "widget flex middle askew-b">
+          <div class = "panel small right">
+            <h2>What have we done?</h2>
+            <label for = "programs" class = "link">Browse our projects</label>
+          </div>
+          <div class = "panel med">
+            <p>Our code is hand-picked from the finest vineyards in all of Kansas, and is lovingly packaged for your enjoyment...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input type = "nav" id = "about" />
+    <div class = "page">
+      <header class = "full light bg-baseline bg-fixed" data-bg-src = "lava-lake">
+        <div class = "centered flex middle bg-dark">
+          <div class = "panel">
+            <img class = "small avatar left" alt = "Our mascot, Iggy" data-src = "iggy-jr" />
+          </div>
+          <div class = "panel med">
+            <h1>About Ignes</h1>
+            <p>(And why it&rsquo;s the greatest)</p>
+          </div>
+        </div>
+      </header>
+      <div class = "border shadow-top"></div>
+      <div class = "page-content">
+        <div class = "padded space-content">
+          <h2 class = "center-text">About Team Ignes</h2>
+          <p>Team Ignes is one of six teams battling it out in the Winter Coding Cup.  Our mission is to win, by beating the other teams.</p>
+          <p>And we&rsquo;re totally not stacked right now =P</p>
+          <p>If you are a member of team Ignes, and have level 3 security clearance, then you are authorized to open the message below.</p>
+
+          <input type = "checkbox" id = "strategy" class = "hide-toggle" />
+          <div class = "hideable padded widget">
+            <label for = "strategy" class = "hideable-arrow"><h2 class = "inline">Our Strategy</h2></label>
+            <div class = "hideable-content space-content">
+              <p>Score more points than the other teams.</p>
+            </div>
+          </div>
+
+          <h2 class = "center-text">About the Winter Coding Cup</h2>
+          <p>This is a seasonal contest hosted by <a data-href = "smv">S.M.V.</a> and <a data-href = "cardstock">Ace Rogers</a>.  This contest is about learning, making friends, and, most importantly, having fun!</p>
+          <p>You can view the contest page <a data-href = "mother-contest">here</a> to find information on the upcoming challenges, entries, and even the other teams.</p>
+          <p>If you want my un-biased advice, don&rsquo;t bother checking out the other teams.  Just make it easy on your self and root for Ignes!</p>
+
+          <h2 class = "center-text">What We Stand For</h2>
+          <pre class = "widget padded code-embed"><b>I</b> magine
+<b>G</b> uaranteed
+<b>N</b> apkins
+  (at)
+<b>E</b> very
+<b>S</b> chool...</pre>
+        </div>
+      </div>
+    </div>
+
+    <input type = "nav" id = "members" />
+    <div class = "page">
+      <header class = "full light bg-baseline bg-fixed" data-bg-src = "lava-2">
+        <div class = "centered flex middle bg-dark">
+          <div class = "panel">
+            <img class = "small avatar left" alt = "Our mascot, Iggy" data-src = "iggy-jr" />
+          </div>
+          <div class = "panel med">
+            <h1>Members</h1>
+            <p>-</p>
+          </div>
+        </div>
+      </header>
+      <div class = "border shadow-top"></div>
+        <div class = "page-content">
+          <div class = "padded  space-content">
+          <h2 class = "center-text">Who are we?</h2>
+          <p>We are a team of coders dedicated to bringing sophistication to the hotlist, and more importantly to the Winter Coding cup.  Below is a list of every user on our team.</p>
+          <div class = "widget">
+            <table class = "padded fill zebra">
+              <thead>
+                <tr><th>Name</th><th>Rank</th><th>Points</th></tr>
+              </thead>
+              <tbody id = "members-output">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input type = "nav" id = "programs" checked />
+    <div class = "page">
+      <header class = "full light bg-baseline bg-fixed" data-bg-src = "code">
+        <div class = "centered flex middle bg-dark">
+          <div class = "panel">
+            <img class = "small avatar left" alt = "Our mascot, Iggy" data-src = "iggy-jr" />
+          </div>
+          <div class = "panel med">
+            <h1>Programs</h1>
+            <p>Only the finest</p>
+          </div>
+        </div>
+      </header>
+      <div class = "border shadow-top"></div>
+      <div class = "page-content">
+        <div class = "padded space-content">
+          <h2>About our programs</h2>
+          <p>Our code is hand-picked from the finest vineyards in all of Kansas, and is lovingly packaged for your enjoyment.</p>
+        </div>
+        <input class = "hide-toggle" type = "checkbox" id = "search-toggle" />
+        <div class = "widget padded hideable">
+          <label for = "search-toggle" class = "hideable-arrow"><h2 class = "inline">Search tools</h2></label>
+          <div class = "hideable-content">
+            <form class = "space-content" id = "query">
+              <fieldset>
+                <legend>Title</legend>
+                <input name = "search-title" placeholder = "Anything..." />
+              </fieldset>
+              <fieldset>
+                <legend>Author</legend>
+                <input name = "search-author" placeholder = "Anybody..." />
+              </fieldset>
+              <fieldset>
+                <legend>Challenge:</legend>
+                <label><input type = "radio" name = "search-tag" value = "home">Homepage</label>
+                <label><input type = "radio" name = "search-tag" value = "wint">Winter</label>
+                <label><input type = "radio" name = "search-tag" value = "crea">Creative</label>
+                <label><input type = "radio" name = "search-tag" value = "lear">Learning</label>
+                <label><input type = "radio" name = "search-tag" value = "coll">Collab</label>
+                <label><input type = "radio" name = "search-tag" value = "fina">Final</label>
+              </fieldset>
+              <div class = "grid col-2">
+                <input type = "reset" value = "Reset" />
+                <input type = "submit" value = "Go!" class = "sharp" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class = "widget padded">
+          <h2>Programs</h2>
+          <div id = "query-output" class = "grid col-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <input type = "nav" id = "standings" />
+    <div class = "page">
+      <header class = "full light bg-baseline bg-fixed" data-bg-src = "firework">
+        <div class = "centered flex middle bg-dark">
+          <div class = "panel">
+            <img class = "small avatar left" alt = "Our mascot, Iggy" data-src = "iggy-jr" />
+          </div>
+          <div class = "panel med">
+            <h1>Standings</h1>
+            <p>We&rsquo;re number one :D</p>
+          </div>
+        </div>
+      </header>
+      <div class = "border shadow-top"></div>
+      <div class = "page-content">
+        <div class = "padded space-content">
+          <h2>Where we are:</h2>
+          <p>There are six teams in the Winter Coding Cup: Ignes, Hydrus, Caela, Tellus, Pruina, and Umbra.  Each team gains points from its entries for each challenge.  Here are the unweighted results, so far:</p>
+          <div class = "widget padded">
+            <canvas id = "main-standing-canvas" width = "400" height = "350" class = "fill">
+              Oh Noes!  How can you not support a canvas element?
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input type = "nav" id = "news" />
+    <div class = "page">
+      <header class = "full light bg-baseline bg-fixed" data-bg-src = "news">
+        <div class = "centered flex middle bg-dark">
+          <div class = "panel">
+            <img class = "small avatar left" alt = "Our mascot, Iggy" data-src = "iggy-jr" />
+          </div>
+          <div class = "panel med">
+            <h1>News</h1>
+            <p>-</p>
+          </div>
+        </div>
+      </header>
+      <div class = "border shadow-top"></div>
+      <div class = "page-content">
+        <div class = "widget padded space-content rel">
+          <span class = "new">New!</span>
+          <h2>Homepage Challenge Open!</h2>
+          <small>01/05/2023</small>
+          <p>The Homepage Challenge has been released, and competitors are scrambling to meet deadlines!  And with all the sudden stress of a deadline, it&rsquo;s common for projects to be rushed to completion.</p>
+          <p>HSstudent16, on behalf of Team Ignes, would like to remind you to always double-check your before submitting it.  You wouldn&rsquo;t want to leave a blatant spelling mistake for the judges to find.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class = "shadow-top">
+      <h1 class = "lightspaced">Team Ignes</h1>
+      <div class = "flex">
+        <div class = "panel med">
+          <p>More information about us can be found on the <label for = "about" class = "link">about</label> page, or by contacting one of the team members.</p>
+        </div>
+        <div class = "panel large">
+          <table class = "fill">
+            <thead>
+              <tr>
+                <th>Sitemap:</th>
+                <th>Contact:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><label for = "home" class = "link">Home</label></td>
+                <td><label for = "team-hsstudent16" class = "link">HSstudent16</label></td>
+              </tr>
+              <tr>
+                <td><label for = "about" class = "link">About</label></td>
+                <td><label for = "team-TJaronP" class = "link">Titus Payton</label></td>
+              </tr>
+              <tr>
+                <td><label for = "members" class = "link">Members</label></td>
+              </tr>
+              <tr>
+                <td><label for = "programs" class = "link">Programs</label></td>
+              </tr>
+              <tr>
+                <td><label for = "standings" class = "link">Standings</label></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </footer>
+
+    <nav>
+      <label class = "d3-box" for = "home">
+        <span class = "side"><span class = "centered">Home</span></span>
+        <span class = "front material-symbols-outlined">house</span>
+      </label>
+      <label class = "d3-box" for = "news">
+        <span class = "side"><span class = "centered">News</span></span>
+        <span class = "front material-symbols-outlined">breaking_news_alt_1</span>
+      </label>
+      <label class = "d3-box" for = "about">
+        <span class = "side"><span class = "centered">About</span></span>
+        <span class = "front material-symbols-outlined">help</span>
+      </label>
+      <label class = "d3-box" for = "members">
+        <span class = "side"><span class = "centered">Our Team</span></span>
+        <span class = "front material-symbols-outlined">group</span>
+      </label>
+      <label class = "d3-box" for = "programs">
+        <span class = "side"><span class = "centered">Our Projects</span></span>
+        <span class = "front material-symbols-outlined">list</span>
+      </label>
+      <label class = "d3-box" for = "standings">
+        <span class = "side"><span class = "centered">Rankings</span></span>
+        <span class = "front material-symbols-outlined">leaderboard</span>
+      </label>
+    </nav>
+
+    <div id = "coveralls"></div>
+
+    <canvas id = "thumbnail" hidden width = "600" height = "600">
+      <img data-src = "lava-2" id = "thumb-mask" />
+    </canvas>
+
+    <script src = "markdown.js"></script>
+    <script src = "hideable.js"></script>
+    <script src = "pages.js"></script>
+    <script src = "x-script.js"></script>
+    <script src = "team.js"></script>
+    <script src = "standings-widget.js"></script>
+    <script src = "thumbnail.js"></script>
+    <script type = "module">
+      let cnv = document.querySelector("#thumbnail"),
+          img = document.querySelector("#thumb-mask"),
+          ctx = cnv.getContext("2d");
+
+      ctx.fillStyle = "black";
+      ctx.textAlign = "left";
+      ctx.textBaseline = "top";
+      ctx.font = "10px Inter Black";
+      ctx.scale(20, 80);
+      ctx.fillText("IGNES", -.5, -.6);
+      ctx.resetTransform();
+      ctx.globalCompositeOperation = "source-atop";
+      ctx.drawImage(img, -100, 0, 800, 600);
+    </script>
+    <script>
+      initUserData({
+        "members": [
+          {
+            "name": "HSstudent16",
+            "username": "hsstudent16",
+            "points": 0,
+            "icon": "https://cdn.kastatic.org/images/avatars/svg/cs-ohnoes.svg",
+            "captain": false,
+            "skill": "Advanced",
+            "background": "photon-2",
+            "tags": ["Full stack", "Game dev", "Spokesperson"],
+            "blurb": "## Hello, world!\nHSstudent16 is an experienced programmer who has been using Khan Academy for 6 years.  He likes programming, math, Legos, and writing about himself in the third person.\n\nHSstudent16 is the author and chief maintainer of this page.  If you find anything you don't like, then let him know in the T&T.\n\nHSstudent16 has no subpage."
+          },
+          {
+            "name": "Dominic R.",
+            "username": "jD2R",
+            "points": 0,
+            "icon": "https://cdn.kastatic.org/images/avatars/svg/leaf-orange.svg",
+            "captain": false,
+            "skill": "Advanced",
+            "background": "photon-1",
+            "tags": [],
+            "blurb": "## Dominic R.\n\nDominic is an advanced game and simulation developer who loves math and programming. Dominic has been on KA for 2 years, and is looking forward to many more years to come.\n\nHSstudent16 totally did not copy this bio from Dominic's subpage, which can be found [here](https://www.khanacademy.org/cs/dr/5329071780184064)."
+          },
+          {
+            "name": "Astro",
+            "username": "astroka",
+            "points": 0,
+            "icon": "https://cdn.kastatic.org/images/avatars/svg/sneak-peak-blue.svg",
+            "captain": false,
+            "skill": "Advanced",
+            "background": "blue",
+            "tags": [],
+            "blurb": "## Astro\n\nAstro is a programmer from Mars who make everything from games to webpages.  Astro tries his best to create something weekly, and is currently devoted to mastering HTML, CSS, JavaScript, Java, React, Python, and Next.JS\n\nHSstudent16 totally did not copy this bio from Astro's subpage, which can be found [here](https://www.khanacademy.org/cs/a/6689856021905408)."
+          },
+          {
+            "name": "Captain Longtreader",
+            "username": "AR15KA",
+            "points": 0,
+            "icon": "https://cdn.kastatic.org/images/avatars/svg/starky-ultimate.svg",
+            "captain": false,
+            "skill": "Beginner",
+            "background": "green",
+            "tags": [],
+            "blurb": "## Captain Longtreader\n\nSo far, the Captain has not reported to the chat thread.  If he wishes to have this bio changed, he is welcome to contact HSstudent16.\n\nThe Captain's subpage can be found [here](https://www.khanacademy.org/cs/w/5745065487974400)."
+          },
+          {
+            "name": "FlameKiller170",
+            "username": "flamekiller170",
+            "points": 0,
+            "icon": "https://cdn.kastatic.org/images/avatars/svg/cs-winston.svg",
+            "captain": false,
+            "skill": "Intermediate",
+            "background": "green",
+            "tags": [],
+            "blurb": "## FlameKiller170\n\nFlameKiller is a code who loves Star Wars.  That's all HSstudent16 could find on his [subpage](https://www.khanacademy.org/cs/s/4839809335476224).  So far, FlameKiller has not reported to an Ignes chat thread."
+          },
+          {
+            "name": "Horizon",
+            "username": "BrenErso",
+            "points": 0,
+            "icon": "https://cdn.kastatic.org/images/avatars/svg/leaf-orange.svg",
+            "captain": false,
+            "skill": "Intermediate",
+            "background": "cosmos",
+            "tags": ["Avatar Creator"],
+            "blurb": "## Horizon\n\nHorizon is a coder who has been on Khan Academy for 4 years, and has over 1.5 *million* energy points!  Horizon designed the avatar for team Ignes, and has already created a homepage for the team.\n\nHorizon's motto is:\n\n> If no one has died, you're probably doing something right.\n\nYou can find Horizon's subpage [here](https://www.khanacademy.org/cs/sp/6034151646478336)."
+          },
+          {
+            "name": "CylenceScythe",
+            "username": "SharleyBoo",
+            "points": 0,
+            "icon": "https://cdn.kastatic.org/images/avatars/svg/aqualine-ultimate.svg",
+            "captain": false,
+            "skill": "Intermediate",
+            "background": "photon-2",
+            "tags": [],
+            "blurb": "## ClyenceScythe\n\nClyenceScythe has been using Khan Academy for seven years, and has over 2 million energy points!  She likes to read, write, draw in both traditional and digital formats, code, edit videos, learn about human psychology, and more very random hobbies.\n\nHSstudent16 totally did not copy this bio from her subpage, which can be found [here](https://www.khanacademy.org/cs/cs/6704712673443840)"
+          },
+          {
+            "name": "JJ999",
+            "username": "ZJJ999",
+            "points": 0,
+            "icon": "https://cdn.kastatic.org/images/avatars/svg/piceratops-ultimate.svg",
+            "captain": false,
+            "skill": "Intermediate",
+            "background": "green",
+            "tags": [],
+            "blurb": "## JJ999\n\nJJ is a web dev who also likes coding, reading, and playing soccer.  JJ has learned Python, HTML, CSS, JavaScript, and C++, and can create games with Pygame (A python module).\n\nHSstudent16 totally did not copy this bio from JJ's homepage, which you can find [here](https://www.khanacademy.org/cs/jj/6346184695791616)"
+          },
+          {
+            "name": "Titus Payton",
+            "username": "TJaronP",
+            "points": 0,
+            "icon": "https://cdn.kastatic.org/images/avatars/svg/piceratops-ultimate.svg",
+            "captain": false,
+            "skill": "Intermediate",
+            "background": "green",
+            "tags": ["Spokesperson"],
+            "blurb": "## Titus Payton\n\nTitus is a intermediate coder who also likes to read, and do archery.  Titus has also volunteered to be team Ignes' second spokesperson, joining HSstudent16.\n\nIf Titus Payton would like a different bio to go here, HSstudent16 will happily add it."
+          }
+        ],
+        "programs": [
+          {
+            "title": "Ignes",
+            "author": "Dominic R.",
+            "id": "5149877583790080",
+            "challenge": "Homepage",
+            "points": 0,
+            "complete": false,
+            "new": true,
+            "winner": false
+          },
+          {
+            "title": "Nothin' special here, just keep scrolling",
+            "author": "CyclenceScythe",
+            "id": "5998671132409856",
+            "challenge": "Homepage",
+            "points": 0,
+            "complete": false,
+            "new": true,
+            "winner": false
+          },
+          {
+            "title": "New Program",
+            "author": "Horizon",
+            "id": "5134544642031616",
+            "challenge": "Homepage",
+            "points": 0,
+            "complete": false,
+            "new": true,
+            "winner": false
+          },
+          {
+            "title": "Team Ignes Homepage",
+            "author": "HSstudent16",
+            "id": "6101041694687232",
+            "challenge": "Homepage",
+            "points": 0,
+            "complete": true,
+            "new": true,
+            "winner": false
+          }
+        ]
+      });
+      standingWidget.init([
+        {
+          "name": "Ignes",
+          "color": "rgb(255, 77, 0)",
+          "seedID": "5655948881870848",
+          "points": 100
+        },
+        {
+          "name": "Hydrus",
+          "color": "rgb(156, 211, 247)",
+          "seedID": "4853125130797056",
+          "points": 90
+        },
+        {
+          "name": "Caela",
+          "color": "rgb(240, 246, 250)",
+          "seedID": "6236337803411456",
+          "points": 60
+        },
+        {
+          "name": "Tellus",
+          "color": "rgb(207, 131, 25)",
+          "seedID": "4808355469639680",
+          "points": 70
+        },
+        {
+          "name": "Pruina",
+          "color": "rgb(207, 234, 255)",
+          "seedID": "5468453388992512",
+          "points": 50
+        },
+        {
+          "name": "Umbra",
+          "color": "rgb(100, 0, 100)",
+          "seedID": "4518062790852608",
+          "points": 80
+        }
+      ]);
+    </script>
+  </body>
+</html>
