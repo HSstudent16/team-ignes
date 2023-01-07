@@ -13,7 +13,7 @@
 
     if (source) {
       try {
-        source.toBlob();
+        source.toDataURL();
         isSafe = true;
       } catch (err) {
         alert ("Oh Noes! The canvas you are using for a thumbnail has been tainted!  Make sure any images you've drawn there follow the proper Cross-Origin protocol.");
