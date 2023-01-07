@@ -9,7 +9,7 @@ var initUserData = ((root, udf) => {
   let footer = doc.querySelector("footer");
   let form = doc.querySelector("#query");
 
-  let programs = [];
+  let programs = [], data;
 
   const aliases = {
     "home": "Homepage",
@@ -141,8 +141,9 @@ var initUserData = ((root, udf) => {
     evt.preventDefault();
   }
 
-  function init (data) {
+  function init (in_data) {
     let i;
+    data = in_data;
     for (i = 0; i < data.members.length; i++) {
       let m = data.members[i];
       createPage(m);
