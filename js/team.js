@@ -78,9 +78,10 @@ var initUserData = ((root, udf) => {
 
     thumb.classList.add("thumb", "small", "lightspaced", "zoom");
     thumb.href = url;
+    thumb.target = "_blank";
 
     thumb.innerHTML = `
-      <img src = "${url}/latest.png" class = "fill" />
+      <img src = "${url}/${p.thumbID || "latest"}.png" class = "fill" />
       ${p.new?'<span class = "new">New!</span>':''}
       <div class = "centered hoverfade">
         <h3 class = "center-text lightspaced ellipsis">${p.title}</h3>
